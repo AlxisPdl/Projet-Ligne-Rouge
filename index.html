@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Réplique maquette Figma</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="nav__title">
+      <a href="#">Logo Placeholder</a>
+    </div>
+    <div class="nav__signup">
+      <a href="#">SignUp</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="header">
+      <div class="header__text">
+        <p>Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry.</p>
+      </div>
+      <div class="header__emailzone">
+        <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Email Address" required>
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+    <div class="carousel">
+      <button id="arrowLeft">&lt;</button>
+      <div id="carouselContent"></div>
+      <button id="arrowRight">&gt;</button>
+  </div>
+    <div class="article">
+      <article class="article__1">
+        <img src="./scss/images/puzzle.png" alt="icone">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500.</p>
+      </article>
+      <article class="article__2">
+        <img src="./scss/images/puzzle.png" alt="icone">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500.</p>
+      </article>
+      <article class="article__3">
+        <img src="./scss/images/puzzle.png" alt="icone">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500.</p>
+      </article>
+    </div>
+
+    <div class="form__title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="form">
+      <form id="contactForm" action="form" method="post">
+        <div class="form__prenom">
+          <input type="text" id="firstName" name="firstName" placeholder="Prénom">
+          <label class="error-message" data-error="false" for="firstName" id="firstNameError" data-message="Votre prénom n'est pas valide ou inexistant"></label>
+          </div>
+          <div class="form__nom">
+          <input type="text" id="lastName" name="lastName" placeholder="Nom">
+          <label class="error-message" data-error="false" for="lastName" id="lastNameError" data-message="Votre nom n'est pas valide ou inexistant"></label>
+        </div>
+        <div class="form__email">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <label class="error-message" data-error="false" for="email" id="emailError" data-message="Votre adresse mail n'est pas valide ou inexistante"></label>
+        </div>
+          <div class="form__tel">
+          <input type="phone" id="phone" name="phone" placeholder="Téléphone">
+          <label class="error-message" data-error="false" for="phone" id="phoneError" data-message="Votre téléphone n'est pas valide ou inexistant"></label>
+        </div>
+        <div class="form__message">
+          <textarea id="message" name="message" placeholder="Quel est votre question ?"></textarea>
+          <label class="error-message" data-error="false" for="message" id="messageError" data-message="Vous nous contactez bien pour quelque chose ? Dites le nous."></label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    
+  </main>
+  <footer>
+    <ul>
+
+      <li><a href="#">About</a> - </li>
+      <li><a href="#">Contact</a> - </li>
+      <li><a href="#">Terms of Use</a> - </li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p>My Website 2022 - All rights reserved</p>
+  </footer>
+  
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

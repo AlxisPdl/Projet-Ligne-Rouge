@@ -1,0 +1,51 @@
+.nav {
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__title {
+      width: 100%;
+      text-align: left;
+      margin-left: 40px;
+
+      & a {
+         color: black;
+         font-size: 18px;
+         text-decoration: none;
+      }
+   }
+
+   &__signup {
+      color: red;
+      text-align: right;
+      margin-right: 40px;
+
+      & a {
+         background-color: #0D6EFD;
+         color: white;
+         padding: 5px;
+         border-radius: 5px;
+         text-decoration: none;
+      }
+
+   }
+
+}
+
+@media (min-width: 769px) {
+   .nav {
+      &__title {
+         & a {
+            font-size: 24px;
+         }
+      }
+
+      &__signup {
+         & a {
+            padding: 10px;
+            font-size: 18px;
+         }
+      }
+   }
+}

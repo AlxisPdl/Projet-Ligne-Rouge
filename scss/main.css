@@ -1,0 +1,238 @@
+* {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .nav__title {
+    width: 100%;
+    text-align: left;
+    margin-left: 40px; }
+    .nav__title a {
+      color: black;
+      font-size: 18px;
+      text-decoration: none; }
+  .nav__signup {
+    color: red;
+    text-align: right;
+    margin-right: 40px; }
+    .nav__signup a {
+      background-color: #0D6EFD;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: none; }
+
+@media (min-width: 769px) {
+  .nav__title a {
+    font-size: 24px; }
+  .nav__signup a {
+    padding: 10px;
+    font-size: 18px; } }
+.header {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/blue-aesthetic-wallpaper-1920x1080-2.jpg);
+  background-size: 100% auto;
+  background-position: center; }
+  .header__text {
+    color: white;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center; }
+    .header__text p {
+      width: 300px;
+      margin-top: 30px;
+      font-size: 20px; }
+  .header__emailzone {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px; }
+    .header__emailzone input {
+      width: 180px;
+      height: 30px;
+      margin: 20px;
+      border: 1px solid rgba(126, 125, 125, 0.452);
+      border-radius: 5px;
+      background-color: rgba(194, 194, 194, 0.863);
+      font-size: 12px;
+      padding-left: 10px; }
+    .header__emailzone button {
+      width: 60px;
+      height: 30px;
+      color: white;
+      background-color: #0D6EFD;
+      border-radius: 5px;
+      border: 1px solid #0D6EFD; }
+
+@media (min-width: 769px) {
+  .header {
+    height: 380px; }
+    .header__text p {
+      margin-top: 70px;
+      font-size: 26px;
+      width: 450px; }
+    .header__emailzone {
+      margin-top: 30px; }
+      .header__emailzone input {
+        font-size: 14px;
+        width: 250px;
+        height: 40px; }
+      .header__emailzone button {
+        font-size: 18px;
+        width: 90px;
+        height: 40px; } }
+@media (min-width: 1199px) {
+  .header {
+    height: 600px; }
+    .header__text p {
+      margin-top: 120px;
+      font-size: 35px;
+      width: 650px; }
+    .header__emailzone {
+      margin-top: 90px; }
+      .header__emailzone input {
+        width: 350px;
+        height: 55px;
+        font-size: 20px; }
+      .header__emailzone button {
+        width: 120px;
+        height: 55px;
+        font-size: 20px; } }
+.article {
+  text-align: center;
+  margin: auto;
+  padding: 25px;
+  width: 70%;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.452); }
+  .article img {
+    width: 40px; }
+  .article h3 {
+    font-size: 20px;
+    padding: 30px 0 15px 0; }
+  .article p {
+    font-size: 12px; }
+
+@media (min-width: 769px) {
+  .article {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding: 20px; }
+    .article p {
+      font-size: 14px; }
+    .article__1 {
+      width: 450px; }
+    .article__2 {
+      margin-top: 1110px;
+      width: 450px; }
+    .article__3 {
+      width: 450px; } }
+@media (min-width: 1199px) {
+  .article {
+    padding: 50px;
+    justify-content: space-around; }
+    .article p {
+      font-size: 18px; }
+    .article__1 {
+      width: 350px; }
+    .article__2 {
+      margin-top: 150px;
+      width: 350px; }
+    .article__3 {
+      width: 350px; } }
+.form {
+  border-radius: 10px;
+  box-shadow: 0 0 0.7em #636262;
+  margin: auto;
+  padding: 15px;
+  width: 70%; }
+  .form__up {
+    height: 50px;
+    display: flex;
+    margin: auto; }
+  .form__middle {
+    height: 50px;
+    display: flex;
+    margin: auto; }
+  .form__message {
+    display: flex;
+    height: 100px; }
+    .form__message ::placeholder {
+      display: flex; }
+  .form input {
+    margin: 10px;
+    background-color: #d9d9d9;
+    color: #858181;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px; }
+  .form button {
+    background-color: #3d8bfd;
+    border: 1px solid #3d8bfd;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    width: 60px;
+    height: 25px;
+    margin-left: 10px; }
+
+.form__title {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-size: 12px; }
+
+@media (min-width: 769px) {
+  .form {
+    width: 465px; } }
+@media (min-width: 1199px) {
+  .form__title h2 {
+    font-size: 24px; } }
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  border-top: 1px solid black;
+  margin: auto;
+  margin-top: 50px; }
+  footer ul {
+    width: 80%;
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px 0 10px 40px;
+    padding: 0; }
+  footer li {
+    width: 100%;
+    display: inline;
+    margin: 0;
+    padding: 0; }
+  footer a {
+    color: #3d8bfd;
+    text-decoration: none;
+    margin: auto;
+    padding: 0; }
+  footer p {
+    width: 80%;
+    font-size: 12px;
+    margin: 10px 0 0 40px;
+    padding-bottom: 20px;
+    color: #00000081; }
+
+@media (min-width: 1199px) {
+  footer ul {
+    font-size: 16px; }
+  footer p {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=main.css.map */
